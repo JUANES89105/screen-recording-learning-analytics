@@ -1,0 +1,127 @@
+# Site dictionary used by the rule-based classifier.
+#
+# Classification will use weighted evidence:
+# - strong_patterns = high-confidence evidence, typically domains or distinctive identifiers.
+# - patterns = weaker contextual evidence.
+#
+# Researchers adapting the pipeline should edit this YAML, not the classifier code.
+
+text_column: texto_ocr_nuevo
+residual_category: Otro sitio
+
+scoring:
+  strong_weight: 10
+  pattern_weight: 1
+  minimum_score: 1
+
+categories:
+
+  Quinan:
+    strong_patterns:
+      - aulavirtual.quinan.cl
+      - mod/quiz/attempt.php
+    patterns:
+      - quinan
+      - aula virtual
+      - aulavirtual
+      - quiz attempt
+      - mis cursos
+      - area personal
+      - tiempo restante
+      - se puntua
+      - comprobar
+      - retroalimentacion
+      - resumen de sus intentos previos
+      - finalizar intento
+      - enviar todo y terminar
+
+  GeoGebra:
+    strong_patterns:
+      - geogebra.org
+      - geogebra.org/calculator
+    patterns:
+      - geogebra
+      - geogebra classic
+
+  ChatGPT:
+    strong_patterns:
+      - chatgpt.com
+      - chat.openai.com
+    patterns:
+      - chatgpt
+      - openai
+      - envia un mensaje a chatgpt
+
+  Desmos:
+    strong_patterns:
+      - desmos.com
+      - desmos.com/calculator
+    patterns:
+      - desmos
+      - desmos graphing calculator
+
+  Symbolab:
+    strong_patterns:
+      - symbolab.com
+    patterns:
+      - symbolab
+      - symbolab math solver
+
+  Mathway:
+    strong_patterns:
+      - mathway.com
+    patterns:
+      - mathway
+
+  YouTube:
+    strong_patterns:
+      - youtube.com
+      - youtu.be
+    patterns:
+      - youtube
+      - suscribirse
+      - visualizaciones
+      - reproducir todo
+
+  Wikipedia:
+    strong_patterns:
+      - wikipedia.org
+      - es.wikipedia.org
+    patterns:
+      - wikipedia
+      - enciclopedia libre
+      - wikimedia
+
+  Juegos:
+    strong_patterns:
+      - poki.com
+      - friv.com
+      - minijuegos.com
+      - crazygames.com
+      - coolmathgames.com
+    patterns:
+      - poki
+      - crazygames
+      - friv
+      - minijuegos
+      - coolmathgames
+      - roblox
+      - minecraft
+      - geometry dash
+      - subway surfers
+      - tetris
+      - solitario
+      - chess
+
+technical_markers:
+
+  Screen Recorder:
+    patterns:
+      - screen recorder
+      - free online screen recorder
+      - grabador de pantalla
+      - screen recording
+      - apowersoft
+      - loom
+      - recorder easeus
+      - recorder.easeus

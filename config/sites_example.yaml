@@ -1,0 +1,29 @@
+# Minimal example for a new study.
+text_column: texto_extraido
+residual_category: Otro sitio
+
+categories:
+  Moodle:
+    patterns:
+      - moodle
+      - my courses
+
+  GeoGebra:
+    patterns:
+      - geogebra
+
+  ChatGPT:
+    patterns:
+      - chatgpt
+      - openai
+
+  YouTube:
+    patterns:
+      - youtube
+      - youtu.be
+
+technical_markers:
+  Screen Recorder:
+    patterns:
+      - screen recorder
+      - recorder easeus
