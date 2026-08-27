@@ -1,65 +1,68 @@
-# Exploratory category refinement
+# Category refinement
 
-## Purpose
+## Historical refinement
 
-The initial OCR-based classifier assigns screen segments to five categories:
+The final taxonomy used in the study was not defined entirely a priori.
 
-- Quinan
-- Google
-- ChatGPT
-- GeoGebra
-- Otro sitio
+The initial OCR-based classification distinguished a small set of digital environments and assigned unmatched observations to a residual category. Inspection of the resulting corpus subsequently revealed recurrent environments and contextual distinctions that were not adequately represented by the initial scheme.
 
-The subsequent refinement stage was not based on a fully predefined
-taxonomy. Instead, OCR outputs and recurrent digital contexts were
-inspected iteratively to identify environments that were not adequately
-represented by the initial classification.
+Additional categories and distinctions were therefore introduced through successive automated and human-guided refinement stages.
 
-This stage therefore represents a human-guided, data-informed refinement
-of the classification rules rather than an automatic discovery of
-categories.
+This historical process should not be interpreted as automatic category discovery. Categories were introduced by the researchers after inspection of the empirical corpus and were subsequently operationalized through explicit classification rules.
 
-## Historical exploratory categories
+## Final study taxonomy
 
-During refinement, the historical notebook considered additional
-digital contexts including:
-
-- Wikipedia
-- YouTube
-- Juegos
-- Screen Recorder
-- Symbolab
-- Gemini
-- Desmos
-- Claude
-
-These exploratory categories should not be interpreted as the final
-analytical taxonomy.
-
-## Final analytical taxonomy
-
-The final taxonomy used for human validation consists of nine categories:
+The final public corpus uses nine categories:
 
 1. Quinan
 2. Google
 3. Google (Mat)
 4. GeoGebra
-5. Juegos
+5. Wikipedia
 6. YouTube
-7. Wikipedia
+7. Juegos
 8. Screen Recorder
 9. Otro sitio
 
-## Reproducibility principle
+`Otro sitio` is retained as an explicit residual category.
 
-The historical exploratory notebook is preserved unchanged.
+`Google (Mat)` represents a derived contextual category in which Google activity contains configured mathematical evidence.
 
-The reproducible implementation will distinguish between:
+## Reproducible refinement engine
 
-1. the exploratory process through which recurrent contexts and
-   classification rules were identified; and
-2. the frozen nine-category classifier subsequently used for analysis
-   and human validation.
+The public implementation separates the refinement engine from the study-specific taxonomy.
 
-No historical classification columns will be used as input when
-regenerating classifications from OCR text.
+The executable refinement logic is implemented in:
+
+`src/refine_classification.py`
+
+Study-specific categories, OCR patterns, derived-category definitions, historical-label mappings, residual refinement priorities, and review rules are defined externally in:
+
+`config/sites.yaml`
+
+The Python refinement engine does not contain the names of the study categories. It interprets the configuration supplied through YAML.
+
+Consequently, researchers adapting the pipeline to another context can define different categories and refinement rules without modifying the Python refinement source code.
+
+## Historical labels and reproducibility
+
+Historical classification variables and the reproducible pipeline serve different purposes.
+
+Historical labels document intermediate decisions made during construction of the original corpus. When a refinement workflow requires a historical label as input, the relevant column and its interpretation are explicitly declared in the YAML configuration.
+
+This makes the dependency visible rather than embedding it in the executable code.
+
+The final manually reviewed historical labels should not be interpreted as outputs that can necessarily be regenerated automatically from OCR alone.
+
+## Human review
+
+Some ambiguous or residual observations require human interpretation.
+
+The reproducible pipeline therefore preserves an explicit distinction between:
+
+- deterministic classification and refinement rules;
+- configured historical dependencies;
+- cases flagged for manual review; and
+- historical human decisions used during development of the study taxonomy.
+
+This distinction is necessary for accurately representing the reproducibility of the original research workflow.

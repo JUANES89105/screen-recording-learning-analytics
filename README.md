@@ -196,6 +196,8 @@ config/sites.yaml
 
 This separation makes the classification logic auditable and allows the rule set to be inspected independently of the Python implementation.
 
+Both the base classifier and the reproducible refinement engine are configuration-driven. Study-specific category names, textual evidence, derived-category definitions, historical mappings, and residual-refinement rules are declared in YAML rather than hard-coded in the Python modules. Researchers adapting the pipeline to another context can therefore modify the configuration without editing the classification or refinement source code.
+
 The pipeline distinguishes explicit digital environments from the residual `Otro sitio` category.
 
 ## Classification refinement

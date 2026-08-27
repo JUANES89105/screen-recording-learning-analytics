@@ -1,5 +1,9 @@
 # Category traceability
 
+
+> **Scope of this document.** This document reconstructs the historical development of the study taxonomy and therefore mentions categories, intermediate variables, and manual decisions that are not part of the current generic classification engine. These historical descriptions should not be interpreted as hard-coded behavior of the public pipeline. In the current implementation, study-specific classification and refinement rules are defined in `config/sites.yaml`, while the Python modules provide generic rule-processing logic.
+
+
 This document reconstructs how categories evolved from the initial OCR-based classification to subsequent automated refinement, manual review, validation, refined site detection, and later analytical grouping. It also distinguishes historical classification decisions from the reproducible rule-based pipeline reconstructed for the study.
 
 ## Stage 1. Initial classifier
