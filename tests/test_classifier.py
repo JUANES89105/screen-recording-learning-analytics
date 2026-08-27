@@ -20,3 +20,53 @@ def test_basic_classification():
         "Moodle", "GeoGebra", "ChatGPT", "Otro sitio"
     ]
     assert out["requiere_revision"].tolist() == [False, False, False, True]
+
+
+def test_classifier_is_driven_by_yaml(tmp_path):
+
+    config = tmp_path / "custom_sites.yaml"
+
+    config.write_text(
+        """
+text_column: ocr
+
+residual_category: Other
+
+categories:
+
+  Desmos:
+    patterns:
+      - desmos
+
+  WolframAlpha:
+    patterns:
+      - wolframalpha
+
+  Other:
+    residual: true
+""",
+        encoding="utf-8",
+    )
+
+    classifier = RuleBasedClassifier(config)
+
+    assert (
+        classifier.classify_text(
+            "Working in the Desmos calculator"
+        ).category
+        == "Desmos"
+    )
+
+    assert (
+        classifier.classify_text(
+            "Searching with WolframAlpha"
+        ).category
+        == "WolframAlpha"
+    )
+
+    assert (
+        classifier.classify_text(
+            "Completely unknown website"
+        ).category
+        == "Other"
+    )

@@ -1,127 +1,249 @@
-# Site dictionary used by the rule-based classifier.
+# ============================================================
+# SCREEN-RECORDING CLASSIFICATION CONFIGURATION
+# ============================================================
 #
-# Classification will use weighted evidence:
-# - strong_patterns = high-confidence evidence, typically domains or distinctive identifiers.
-# - patterns = weaker contextual evidence.
+# This file is the source of truth for the classification scheme.
+# Researchers adapting the pipeline should edit this YAML rather
+# than modifying the Python classification code.
 #
-# Researchers adapting the pipeline should edit this YAML, not the classifier code.
+# The configuration reproduces the final nine-category scheme
+# used in the study.
+# ============================================================
 
 text_column: texto_ocr_nuevo
+historical_column: palabra_base
+
 residual_category: Otro sitio
+
+# ------------------------------------------------------------
+# Optional corpus-specific controls.
+# These verify reproduction of the study corpus but do not
+# define the classification algorithm itself.
+# ------------------------------------------------------------
+
+study:
+  expected_segments: 18829
+  expected_videos: 100
+
+# ------------------------------------------------------------
+# Weighted classifier
+# ------------------------------------------------------------
 
 scoring:
   strong_weight: 10
   pattern_weight: 1
   minimum_score: 1
 
+# ------------------------------------------------------------
+# FINAL CATEGORIES
+#
+# YAML order also defines precedence when otherwise required.
+# ------------------------------------------------------------
+
 categories:
 
   Quinan:
+    historical_labels:
+      - quinan
+
     strong_patterns:
       - aulavirtual.quinan.cl
+      - aulavirtualquinan.cl
       - mod/quiz/attempt.php
+      - mod/quiz/review.php
+      - mod/quiz/summary.php
+
     patterns:
       - quinan
       - aula virtual
       - aulavirtual
-      - quiz attempt
       - mis cursos
       - area personal
       - tiempo restante
-      - se puntua
-      - comprobar
-      - retroalimentacion
-      - resumen de sus intentos previos
       - finalizar intento
       - enviar todo y terminar
 
+
   GeoGebra:
+    historical_labels:
+      - geogebra
+
     strong_patterns:
       - geogebra.org
       - geogebra.org/calculator
+
     patterns:
       - geogebra
       - geogebra classic
+      - graphing calculator geogebra
 
-  ChatGPT:
-    strong_patterns:
-      - chatgpt.com
-      - chat.openai.com
-    patterns:
-      - chatgpt
-      - openai
-      - envia un mensaje a chatgpt
 
-  Desmos:
-    strong_patterns:
-      - desmos.com
-      - desmos.com/calculator
-    patterns:
-      - desmos
-      - desmos graphing calculator
+  Google:
+    historical_labels:
+      - google
 
-  Symbolab:
     strong_patterns:
-      - symbolab.com
-    patterns:
-      - symbolab
-      - symbolab math solver
+      - google.com
+      - google.cl
 
-  Mathway:
-    strong_patterns:
-      - mathway.com
     patterns:
-      - mathway
+      - google
+      - google search
+      - buscar con google
 
-  YouTube:
-    strong_patterns:
-      - youtube.com
-      - youtu.be
-    patterns:
-      - youtube
-      - suscribirse
-      - visualizaciones
-      - reproducir todo
+
+  Google (Mat):
+    derived_from: Google
+
+    derivation:
+      type: term_evidence
+
+      terms:
+        - funcion
+        - funciones
+        - funcion lineal
+        - funcion afin
+        - funcion cuadratica
+        - lineal
+        - lineales
+        - afin
+        - afines
+        - cuadratica
+        - ecuacion
+        - ecuaciones
+        - sistema de ecuaciones
+        - sistemas de ecuaciones
+        - geometria
+        - triangulo
+        - triangulo equilatero
+        - cuadrado
+        - rectangulo
+        - area
+        - perimetro
+        - pendiente
+        - vertice
+        - parabola
+        - grafica
+        - grafico
+        - graficar
+        - dominio
+        - recorrido
+        - variable independiente
+        - variable dependiente
+        - matematica
+        - matematicas
+        - calcular
+        - calculator
+
 
   Wikipedia:
     strong_patterns:
       - wikipedia.org
       - es.wikipedia.org
+      - eswikipedia.org
+      - esavikipedia.org
+      - esmikipedia.org
+      - eswvikipedia.org
+      - jeswikipedia.org
+
     patterns:
       - wikipedia
-      - enciclopedia libre
-      - wikimedia
+      - wikipedia, la enciclopedia
+      - la enciclopedia libre
+
+
+  YouTube:
+    strong_patterns:
+      - youtube.com/watch
+      - youtube.com/shorts
+      - youtube.com/results
+      - youtu.be/
+
+    patterns:
+      - youtube
+      - suscribirse
+      - visualizaciones
+
 
   Juegos:
     strong_patterns:
       - poki.com
       - friv.com
+      - friv.co
       - minijuegos.com
       - crazygames.com
       - coolmathgames.com
+      - es.y8.com
+      - esy8.com
+      - y8.com
+      - amogus.io
+      - classic.minecraft.net
+
     patterns:
       - poki
-      - crazygames
       - friv
       - minijuegos
+      - crazygames
       - coolmathgames
-      - roblox
       - minecraft
-      - geometry dash
-      - subway surfers
-      - tetris
-      - solitario
-      - chess
+      - roblox
+      - fireboy
 
-technical_markers:
 
   Screen Recorder:
+    strong_patterns:
+      - recorder.easeus.com/es/grabador-de-pantalla
+      - recorder.caseus.com/es/grabador-de-pantalla
+      - recorder.esseus.com/es/grabador-de-pantalla
+      - recorder.aseus.com/es/grabador-de-pantalla
+
     patterns:
-      - screen recorder
+      - grabador de pantalla gratis online
       - free online screen recorder
+      - online-screen-recorder-brand
+      - screen recorder
       - grabador de pantalla
-      - screen recording
-      - apowersoft
-      - loom
-      - recorder easeus
-      - recorder.easeus
+      - easeus
+
+
+  Otro sitio:
+    residual: true
+
+
+# ------------------------------------------------------------
+# HISTORICAL REFINEMENT
+#
+# These settings describe how the historical first-stage labels
+# are treated during reproduction of the study.
+# ------------------------------------------------------------
+
+refinement:
+
+  preserve_historical:
+    - Quinan
+    - GeoGebra
+
+  historical_derived_rule:
+    category: Google
+
+  refine_residual_from:
+    - Otro sitio
+
+  residual_priority:
+    - Wikipedia
+    - YouTube
+    - Juegos
+    - GeoGebra
+    - Quinan
+    - Screen Recorder
+
+  review_if_detected:
+    - Quinan
+
+  historical_to_residual:
+    chatgpt:
+      category: Otro sitio
+      requires_review: true
+      reason: >
+        ChatGPT was present in the initial historical classification
+        but is not part of the final nine-category scheme.

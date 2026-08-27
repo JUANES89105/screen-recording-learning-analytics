@@ -1,28 +1,60 @@
-# Minimal example for a new study.
+# Minimal example for adapting the pipeline to a new study.
+#
+# Researchers should edit this YAML rather than modifying
+# the Python classification code.
+
 text_column: texto_extraido
 residual_category: Otro sitio
 
+scoring:
+  strong_weight: 10
+  pattern_weight: 1
+  minimum_score: 1
+
 categories:
+
   Moodle:
+    strong_patterns:
+      - moodle.org
+
     patterns:
       - moodle
       - my courses
 
+
   GeoGebra:
+    strong_patterns:
+      - geogebra.org
+
     patterns:
       - geogebra
 
+
   ChatGPT:
+    strong_patterns:
+      - chatgpt.com
+      - chat.openai.com
+
     patterns:
       - chatgpt
       - openai
 
+
   YouTube:
-    patterns:
-      - youtube
+    strong_patterns:
+      - youtube.com
       - youtu.be
 
+    patterns:
+      - youtube
+
+
+  Otro sitio:
+    residual: true
+
+
 technical_markers:
+
   Screen Recorder:
     patterns:
       - screen recorder
