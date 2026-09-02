@@ -1,77 +1,100 @@
-# Initial classification logic
+# Initial rule-based classification
 
-The first classification stage operates on the OCR text associated with each screen segment.
+The initial classification stage operates on OCR text extracted from each
+segment of the screen-recording corpus.
+
+The purpose of this stage is to identify a small set of digital environments
+defined a priori before the subsequent taxonomy-refinement procedure.
 
 ## Initial categories
 
-The original implementation defines four explicit categories:
+The initial classifier distinguishes four explicit environments:
 
-- `quinan`
-- `google`
-- `chatgpt`
-- `geogebra`
+- Quinan
+- Google
+- ChatGPT
+- GeoGebra
 
-If no rule is matched, the segment is assigned to:
+Segments for which none of these environments can be identified from the OCR
+evidence are assigned to the residual category:
 
-- `otro sitio`
+- Otro sitio
 
-## Initial keywords
+The corresponding configuration is stored in:
 
-The original classifier uses the following keyword sets:
+`config/sites_initial.yaml`
 
-### quinan
-- `quinan`
-- `aulavirtual`
+## Classification rules
 
-### google
-- `google`
+The classifier is implemented in:
 
-### chatgpt
-- `chatgpt`
+`src/classifier.py`
 
-### geogebra
-- `geogebra`
+The classification engine is independent of the category definitions. The
+categories, lexical patterns, residual category, scoring parameters, and tie
+priority are provided through the external YAML configuration.
 
-## Text normalization
+For the initial classification, the relevant lexical evidence is:
 
-Before classification:
+| Category | OCR patterns |
+|---|---|
+| Quinan | `quinan`, `aulavirtual` |
+| Google | `google` |
+| ChatGPT | `chatgpt` |
+| GeoGebra | `geogebra` |
+| Otro sitio | residual category |
 
-1. OCR text is converted to lowercase.
-2. Keyword matching is performed using regular expressions with word boundaries.
+OCR text is normalized before classification. The classifier counts the
+occurrences of the configured patterns and accumulates the corresponding
+evidence score for each category.
 
-## Classification rule
+The category with the highest score is assigned to the segment.
 
-For each category, the classifier counts the number of keyword occurrences in the OCR text.
+If no category reaches the minimum classification score, the segment is
+assigned to `Otro sitio`.
 
-The category with the highest number of matches is assigned.
+In the event of equal scores, the order of the categories in the YAML file is
+used as the priority rule:
 
-If no category has any match, the segment is assigned to `otro sitio`.
+1. Quinan
+2. Google
+3. ChatGPT
+4. GeoGebra
+5. Otro sitio
 
-## Historical tie-breaking behavior
+## Initial classification output
 
-The historical Python implementation used:
+Applying the initial configuration to the 18,829 segments produced the
+following distribution:
 
-`max(conteos, key=conteos.get)`
+| Initial category | Segments | Percentage |
+|---|---:|---:|
+| Quinan | 13,161 | 69.90% |
+| Otro sitio | 4,345 | 23.08% |
+| Google | 840 | 4.46% |
+| ChatGPT | 250 | 1.33% |
+| GeoGebra | 233 | 1.24% |
+| **Total** | **18,829** | **100.00%** |
 
-Therefore, in the case of an exact tie, Python preserves the category order defined in the dictionary.
+The relatively large residual group, representing approximately one quarter
+of the corpus, motivated the subsequent taxonomy-refinement stage.
 
-The historical priority order was:
+The machine-readable summary is available at:
 
-1. `quinan`
-2. `google`
-3. `chatgpt`
-4. `geogebra`
+`data/processed/initial_classification_summary.csv`
 
-This behavior must initially be reproduced exactly for historical reproducibility.
+## Position in the analytical workflow
 
-## Additional marker
+The initial stage is part of the following sequence:
 
-The historical implementation appended `*` to the detected category when more than one keyword occurrence was found.
+OCR extraction
+→ Initial rule-based classification
+→ Five-category initial representation
+→ Taxonomy refinement
+→ Temporal-context resolution
+→ Expert review of residual episodes
+→ Final nine-category classification
 
-Example:
-
-`quinan*`
-
-This marker represents repeated lexical evidence only. It is not a confidence score or probability.
-
-The reproducible pipeline will preserve this behavior as a historical output field, while keeping the base category in a separate field.
+The initial classifier therefore provides the first structured representation
+of the OCR evidence, while the subsequent stages refine that representation
+using additional lexical, contextual, temporal, and expert evidence.

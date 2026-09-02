@@ -1,0 +1,51 @@
+# ============================================================
+# INITIAL RULE-BASED CLASSIFICATION
+# ============================================================
+#
+# Configuration for the initial rule-based classification.
+#
+# Explicit environments:
+#   Quinan
+#   Google
+#   ChatGPT
+#   GeoGebra
+#
+# Segments without evidence for these environments are assigned
+# to the residual category "Otro sitio".
+#
+# Priority in ties:
+#   Quinan > Google > ChatGPT > GeoGebra
+#
+# See docs/initial_classification.md
+# ============================================================
+
+text_column: texto_ocr_nuevo
+
+residual_category: Otro sitio
+
+scoring:
+  strong_weight: 1
+  pattern_weight: 1
+  minimum_score: 1
+
+categories:
+
+  Quinan:
+    patterns:
+      - quinan
+      - aulavirtual
+
+  Google:
+    patterns:
+      - google
+
+  ChatGPT:
+    patterns:
+      - chatgpt
+
+  GeoGebra:
+    patterns:
+      - geogebra
+
+  Otro sitio:
+    residual: true
