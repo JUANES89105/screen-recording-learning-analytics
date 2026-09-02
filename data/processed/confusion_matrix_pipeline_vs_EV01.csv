@@ -1,0 +1,10 @@
+,pipeline_Quinan,pipeline_Google,pipeline_Google (Mat),pipeline_GeoGebra,pipeline_Wikipedia,pipeline_YouTube,pipeline_Juegos,pipeline_Screen Recorder,pipeline_Otro sitio
+human_Quinan,48,1,0,2,0,0,0,4,2
+human_Google,1,22,12,1,0,0,3,1,1
+human_Google (Mat),0,3,28,5,2,0,0,0,0
+human_GeoGebra,0,0,0,39,0,0,0,0,0
+human_Wikipedia,0,0,5,0,47,0,0,0,0
+human_YouTube,0,3,0,0,0,17,0,0,0
+human_Juegos,0,9,0,0,0,33,47,1,8
+human_Screen Recorder,1,1,0,2,0,0,0,42,2
+human_Otro sitio,0,11,5,1,1,0,0,2,37
