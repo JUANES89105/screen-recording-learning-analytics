@@ -62,3 +62,23 @@ that extraction and evidence-feature derivation require authorized access. The
 public derived inputs are sufficient to reproduce all downstream automatic,
 temporal, and expert-decision applications and to verify the authoritative
 final labels exactly.
+
+## Public linkage and traceability
+
+The tuple `video_id`, `start_time_s`, `end_time_s`, and `duration_s` is unique
+for all 18,829 final rows and links the final dataset to
+`refinement_input_public.csv`. The latter supplies `segment_id`, historical
+`palabra_base`, OCR mode, matched mathematical terms, and category-level
+evidence flags. Manual rows can be linked to
+`manual_review_decisions_public.csv` by anonymized video and episode bounds;
+`src/reproduce_final_classification.py` validates every such link.
+
+`data/processed/human_validation_sample_manifest.csv` links the 450 anonymous
+validation image IDs to the corresponding public segments. Evaluator responses
+remain in `data/processed/human_validation_annotations.csv`.
+
+These links support public procedural traceability through anonymized segment,
+method, evidence features, and expert episode decision. They do not provide
+public access to the original screenshot, OCR text, or recording. Direct
+traceability to that audiovisual evidence exists only within the restricted
+research environment.

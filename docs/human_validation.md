@@ -54,6 +54,17 @@ The sampling design included:
 - 450 unique screenshots;
 - no duplicated image hashes.
 
+The realized sample is documented in
+`data/processed/human_validation_sample_manifest.csv`. It links each anonymous
+image ID to an anonymized public segment and permits verification of the 450
+unique selections, nine balanced strata, and 85 represented videos.
+
+The fixed seed records the historical sampling procedure. Exact regeneration
+of the random draw is outside the public reproduction boundary because the
+original screenshot sampling frame, image hashes, and its historical ordering
+are restricted. The manifest makes the selected segment set auditable without
+publishing those materials.
+
 Stratification was based on the final pipeline classification. The purpose of
 the balanced design was to ensure that every category was represented with the
 same number of validation instances, independently of its prevalence in the

@@ -1,0 +1,451 @@
+image_id,segment_id,video_id,start_time_s,end_time_s,duration_s,pipeline_category,classification_method,temporal_interpolation,manual_review
+IMG_0001,V081-S00022,V081,1420.16,1423.18,3.02,Google (Mat),historical_google + math_terms: area,False,False
+IMG_0002,V071-S00243,V071,1754.0,1756.0,2.0,Otro sitio,manual_episode_review,False,True
+IMG_0003,V095-S00022,V095,254.0,259.0,5.0,Google (Mat),historical_google + math_terms: funcion; funciones; cuadrado; vertice; parabola; dominio,False,False
+IMG_0004,V054-S00058,V054,509.4,529.44,20.04,Otro sitio,manual_episode_review,False,True
+IMG_0005,V014-S00006,V014,5.45,7.27,1.82,Google,historical_google_without_math_evidence,False,False
+IMG_0006,V096-S00143,V096,1182.6,1183.6,1.0,GeoGebra,historical_base,False,False
+IMG_0007,V087-S01383,V087,3561.3,3562.29,0.99,YouTube,manual_episode_review,False,True
+IMG_0008,V021-S00287,V021,1387.61,1388.59,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0009,V021-S00428,V021,1644.25,1645.23,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0010,V098-S00250,V098,2111.0,2112.0,1.0,YouTube,strong_youtube_evidence,False,False
+IMG_0011,V041-S00235,V041,3736.82,3744.96,8.14,Screen Recorder,temporal_interpolation_30s_between_Screen Recorder,True,False
+IMG_0012,V021-S00477,V021,1768.18,1770.13,1.95,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0013,V021-S01229,V021,3471.96,3473.91,1.95,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0014,V021-S01097,V021,3203.61,3204.59,0.98,Google,manual_episode_review,False,True
+IMG_0015,V021-S00819,V021,2501.02,2507.85,6.83,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0016,V097-S00134,V097,2145.0,2149.0,4.0,Google (Mat),historical_google + math_terms: funcion; funcion cuadratica; cuadratica; vertice; parabola; calcular; calculator,False,False
+IMG_0017,V069-S00003,V069,7.04,8.05,1.01,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0018,V096-S00203,V096,1476.76,1477.75,0.99,GeoGebra,historical_base,False,False
+IMG_0019,V021-S00376,V021,1511.54,1512.52,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0020,V021-S00643,V021,2094.11,2095.08,0.97,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0021,V076-S00072,V076,1057.24,1069.86,12.62,Google (Mat),historical_google + math_terms: triangulo; cuadrado; rectangulo; area; perimetro; calcular,False,False
+IMG_0022,V090-S00448,V090,2416.11,2435.01,18.9,Google,historical_google_without_math_evidence,False,False
+IMG_0023,V080-S00235,V080,2906.94,2908.92,1.98,Juegos,strong_game_domain,False,False
+IMG_0024,V011-S00079,V011,721.42,730.5,9.08,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0025,V071-S00509,V071,3079.0,3080.0,1.0,Google,manual_episode_review,False,True
+IMG_0026,V075-S00063,V075,376.64,377.62,0.98,GeoGebra,historical_base,False,False
+IMG_0027,V090-S00460,V090,2564.26,2565.26,1.0,Juegos,manual_episode_review,False,True
+IMG_0028,V087-S00326,V087,1921.44,1922.43,0.99,YouTube,strong_youtube_evidence,False,False
+IMG_0029,V021-S00676,V021,2188.76,2189.74,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0030,V091-S00130,V091,2678.0,2679.28,1.28,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0031,V061-S00470,V061,2658.28,2662.23,3.95,Juegos,manual_episode_review,False,True
+IMG_0032,V087-S01076,V087,3194.46,3195.45,0.99,YouTube,manual_episode_review,False,True
+IMG_0033,V087-S01165,V087,3289.64,3290.63,0.99,YouTube,manual_episode_review,False,True
+IMG_0034,V026-S00256,V026,2902.56,2903.56,1.0,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0035,V046-S00077,V046,3207.14,3220.78,13.64,Google,historical_google_without_math_evidence,False,False
+IMG_0036,V049-S00102,V049,5419.47,5423.95,4.48,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0037,V006-S00059,V006,1312.0,1315.0,3.0,GeoGebra,historical_base,False,False
+IMG_0038,V087-S00012,V087,98.15,113.03,14.88,Otro sitio,manual_episode_review,False,True
+IMG_0039,V047-S00094,V047,4308.15,4309.15,1.0,Google (Mat),historical_google + math_terms: funcion; matematica,False,False
+IMG_0040,V097-S00176,V097,3043.0,3048.0,5.0,Otro sitio,manual_episode_review,False,True
+IMG_0041,V062-S00213,V062,1537.2,1538.19,0.99,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0042,V087-S00024,V087,151.69,152.68,0.99,YouTube,strong_youtube_evidence,False,False
+IMG_0043,V071-S00348,V071,2235.0,2237.0,2.0,Google (Mat),historical_google + math_terms: triangulo,False,False
+IMG_0044,V086-S00049,V086,861.0,862.0,1.0,Juegos,strong_game_domain,False,False
+IMG_0045,V066-S00156,V066,2538.87,4483.6,1944.73,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0046,V010-S00002,V010,865.87,898.32,32.45,Google,historical_google_without_math_evidence,False,False
+IMG_0047,V071-S00194,V071,1547.0,1548.0,1.0,Otro sitio,manual_episode_review,False,True
+IMG_0048,V087-S01057,V087,3175.62,3176.62,1.0,YouTube,manual_episode_review,False,True
+IMG_0049,V061-S00367,V061,2304.04,2306.01,1.97,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0050,V008-S00057,V008,795.12,798.19,3.07,Google (Mat),historical_google + math_terms: funcion; funciones; funcion lineal; funcion afin; lineal; lineales; afin; afines; area; grafica,False,False
+IMG_0051,V034-S00028,V034,941.62,950.06,8.44,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0052,V097-S00090,V097,1630.0,1635.0,5.0,Google,historical_google_without_math_evidence,False,False
+IMG_0053,V046-S00072,V046,3007.42,3022.04,14.62,Google,historical_google_without_math_evidence,False,False
+IMG_0054,V077-S00072,V077,906.05,907.06,1.01,Screen Recorder,temporal_interpolation_30s_between_Screen Recorder,True,False
+IMG_0055,V025-S00101,V025,1270.27,1271.24,0.97,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0056,V008-S00172,V008,1822.53,1830.71,8.18,Google (Mat),historical_google + math_terms: area,False,False
+IMG_0057,V037-S00289,V037,1394.69,1395.68,0.99,Juegos,manual_episode_review,False,True
+IMG_0058,V095-S00171,V095,1687.0,1688.0,1.0,GeoGebra,historical_base,False,False
+IMG_0059,V041-S00229,V041,3550.69,3552.73,2.04,Otro sitio,manual_episode_review,False,True
+IMG_0060,V021-S01217,V021,3433.9,3435.86,1.96,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0061,V057-S00068,V057,1064.69,1076.86,12.17,Quinan,historical_base,False,False
+IMG_0062,V098-S00045,V098,701.0,707.0,6.0,Google (Mat),historical_google + math_terms: funcion; funcion cuadratica; cuadratica,False,False
+IMG_0063,V002-S00018,V002,903.63,912.48,8.85,Google (Mat),historical_google + math_terms: funcion; funciones; funcion lineal; funcion afin; lineal; lineales; afin; afines; grafica; dominio,False,False
+IMG_0064,V068-S00052,V068,726.0,732.0,6.0,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0065,V084-S00089,V084,1843.11,1846.09,2.98,Juegos,strong_game_domain,False,False
+IMG_0066,V008-S00045,V008,739.86,740.88,1.02,Juegos,strong_game_domain,False,False
+IMG_0067,V080-S00153,V080,2323.97,2324.96,0.99,Juegos,manual_episode_review,False,True
+IMG_0068,V057-S00001,V057,0.0,2.03,2.03,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0069,V090-S00415,V090,2274.93,2276.91,1.98,Otro sitio,manual_episode_review,False,True
+IMG_0070,V037-S00034,V037,312.14,313.13,0.99,Juegos,strong_game_domain,False,False
+IMG_0071,V087-S00940,V087,2979.32,2980.31,0.99,YouTube,manual_episode_review,False,True
+IMG_0072,V010-S00007,V010,906.43,908.46,2.03,GeoGebra,historical_base,False,False
+IMG_0073,V056-S00039,V056,580.55,581.57,1.02,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0074,V096-S00139,V096,1147.7,1148.7,1.0,GeoGebra,historical_base,False,False
+IMG_0075,V021-S00575,V021,1983.84,1985.79,1.95,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0076,V084-S00231,V084,2862.32,2868.27,5.95,Otro sitio,manual_episode_review,False,True
+IMG_0077,V047-S00097,V047,4311.17,4314.2,3.03,Google (Mat),historical_google + math_terms: funcion; ecuacion; ecuaciones; matematica,False,False
+IMG_0078,V020-S00118,V020,2144.48,2146.53,2.05,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0079,V021-S00734,V021,2356.6,2357.58,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0080,V005-S00186,V005,1338.9,1340.9,2.0,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0081,V046-S00086,V046,3463.36,3464.33,0.97,Google (Mat),historical_google + math_terms: area,False,False
+IMG_0082,V006-S00023,V006,931.0,932.0,1.0,Google (Mat),historical_google + math_terms: funcion; funciones; funcion lineal; funcion afin; lineal; lineales; afin; matematica; matematicas,False,False
+IMG_0083,V021-S00336,V021,1451.04,1452.02,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0084,V084-S00237,V084,2910.91,2911.9,0.99,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0085,V046-S00088,V046,3556.88,3557.86,0.98,Otro sitio,manual_episode_review,False,True
+IMG_0086,V097-S00035,V097,1143.0,1144.0,1.0,GeoGebra,historical_base,False,False
+IMG_0087,V087-S00493,V087,2384.44,2386.43,1.99,YouTube,strong_youtube_evidence,False,False
+IMG_0088,V086-S00194,V086,2135.0,2137.0,2.0,Otro sitio,manual_episode_review,False,True
+IMG_0089,V021-S00611,V021,2031.65,2032.63,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0090,V087-S00657,V087,2612.48,2613.47,0.99,YouTube,manual_episode_review,False,True
+IMG_0091,V073-S00110,V073,954.95,959.96,5.01,Google (Mat),historical_google + math_terms: triangulo; triangulo equilatero; cuadrado; vertice; calculator,False,False
+IMG_0092,V087-S01215,V087,3352.1,3353.09,0.99,YouTube,manual_episode_review,False,True
+IMG_0093,V091-S00015,V091,447.0,481.0,34.0,Quinan,historical_base,False,False
+IMG_0094,V021-S00497,V021,1793.55,1801.36,7.81,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0095,V008-S00091,V008,1301.66,1302.68,1.02,Google (Mat),historical_google + math_terms: area,False,False
+IMG_0096,V096-S00136,V096,1130.75,1142.72,11.97,Google (Mat),historical_google + math_terms: funcion; funcion cuadratica; cuadratica,False,False
+IMG_0097,V021-S00866,V021,2600.56,2601.53,0.97,Google (Mat),historical_google + math_terms: funcion,False,False
+IMG_0098,V087-S01299,V087,3443.32,3444.31,0.99,YouTube,manual_episode_review,False,True
+IMG_0099,V088-S00071,V088,983.0,990.0,7.0,Quinan,historical_base,False,False
+IMG_0100,V021-S00839,V021,2561.52,2566.4,4.88,Google (Mat),historical_google + math_terms: funcion; area; grafico,False,False
+IMG_0101,V046-S00005,V046,1563.63,1564.6,0.97,Quinan,historical_base,False,False
+IMG_0102,V092-S00175,V092,2672.0,2674.82,2.82,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0103,V090-S00014,V090,481.23,486.21,4.98,Google (Mat),historical_google + math_terms: funcion; funcion cuadratica; cuadratica,False,False
+IMG_0104,V031-S00104,V031,2292.89,2293.89,1.0,Quinan,historical_base,False,False
+IMG_0105,V084-S00097,V084,1888.72,1890.7,1.98,Google,historical_google_without_math_evidence,False,False
+IMG_0106,V038-S00084,V038,2536.8,3728.26,1191.46,Otro sitio,manual_episode_review,False,True
+IMG_0107,V021-S00445,V021,1703.78,1710.61,6.83,Google,manual_episode_review,False,True
+IMG_0108,V021-S00584,V021,1996.52,1997.5,0.98,Wikipedia,temporal_interpolation_30s_between_Wikipedia,True,False
+IMG_0109,V096-S00366,V096,2617.48,2618.48,1.0,GeoGebra,historical_base,False,False
+IMG_0110,V002-S00062,V002,1440.06,1546.24,106.18,Screen Recorder,manual_episode_review,False,True
+IMG_0111,V070-S00250,V070,4036.0,4040.0,4.0,Google,historical_google_without_math_evidence,False,False
+IMG_0112,V097-S00105,V097,1776.0,1777.0,1.0,Quinan,historical_base,False,False
+IMG_0113,V087-S01265,V087,3408.62,3409.61,0.99,YouTube,manual_episode_review,False,True
+IMG_0114,V096-S00229,V096,1576.47,1580.46,3.99,GeoGebra,strong_geogebra_evidence,False,False
+IMG_0115,V084-S00139,V084,2148.48,2151.45,2.97,Juegos,manual_episode_review,False,True
+IMG_0116,V100-S00199,V100,2079.13,2080.11,0.98,Quinan,historical_base,False,False
+IMG_0117,V080-S00084,V080,1833.2,1835.18,1.98,Otro sitio,manual_episode_review,False,True
+IMG_0118,V076-S00098,V076,1354.66,1356.76,2.1,Screen Recorder,temporal_interpolation_30s_between_Screen Recorder,True,False
+IMG_0119,V021-S00606,V021,2026.77,2027.75,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0120,V090-S00072,V090,862.05,864.03,1.98,Google,historical_google_without_math_evidence,False,False
+IMG_0121,V097-S00154,V097,2828.0,2831.0,3.0,GeoGebra,historical_base,False,False
+IMG_0122,V033-S00159,V033,2877.53,3070.12,192.59,Otro sitio,manual_episode_review,False,True
+IMG_0123,V070-S00257,V070,4096.0,4105.0,9.0,Google (Mat),historical_google + math_terms: calculator,False,False
+IMG_0124,V078-S00032,V078,2011.0,2013.0,2.0,Google,historical_google_without_math_evidence,False,False
+IMG_0125,V037-S00543,V037,3415.65,3423.6,7.95,Google,manual_episode_review,False,True
+IMG_0126,V095-S00045,V095,637.0,644.0,7.0,GeoGebra,historical_base,False,False
+IMG_0127,V021-S00348,V021,1465.68,1466.66,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0128,V081-S00062,V081,3549.4,3549.4,0.0,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0129,V008-S00156,V008,1695.64,1705.87,10.23,Juegos,strong_game_domain,False,False
+IMG_0130,V008-S00170,V008,1807.18,1809.22,2.04,Google (Mat),historical_google + math_terms: area,False,False
+IMG_0131,V056-S00140,V056,1305.23,1306.24,1.01,Quinan,historical_base,False,False
+IMG_0132,V087-S00783,V087,2814.74,2815.73,0.99,YouTube,manual_episode_review,False,True
+IMG_0133,V087-S00934,V087,2973.37,2974.36,0.99,YouTube,manual_episode_review,False,True
+IMG_0134,V018-S00116,V018,366.07,370.84,4.77,Otro sitio,manual_episode_review,False,True
+IMG_0135,V081-S00020,V081,1418.15,1419.16,1.01,Google (Mat),historical_google + math_terms: area,False,False
+IMG_0136,V021-S00325,V021,1433.48,1435.43,1.95,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0137,V084-S00212,V084,2755.25,2757.23,1.98,Juegos,manual_episode_review,False,True
+IMG_0138,V086-S00270,V086,2911.0,2912.0,1.0,Google (Mat),manual_episode_review,False,True
+IMG_0139,V087-S00182,V087,1322.6,1323.59,0.99,YouTube,strong_youtube_evidence,False,False
+IMG_0140,V021-S00487,V021,1779.89,1780.87,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0141,V065-S00081,V065,1480.74,1481.75,1.01,Quinan,historical_base,False,False
+IMG_0142,V075-S00050,V075,306.45,319.3,12.85,Otro sitio,manual_episode_review,False,True
+IMG_0143,V090-S00066,V090,846.14,849.12,2.98,Google (Mat),historical_google + math_terms: funcion; funcion cuadratica; cuadratica; cuadrado,False,False
+IMG_0144,V087-S00180,V087,1318.63,1320.62,1.99,YouTube,strong_youtube_evidence,False,False
+IMG_0145,V048-S00122,V048,4623.78,4624.86,1.08,Otro sitio,manual_episode_review,False,True
+IMG_0146,V005-S00197,V005,1358.9,1359.9,1.0,Google,historical_google_without_math_evidence,False,False
+IMG_0147,V004-S00006,V004,2387.0,2390.0,3.0,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0148,V075-S00083,V075,615.86,618.83,2.97,Google (Mat),historical_google + math_terms: triangulo; cuadrado; area; perimetro; calcular,False,False
+IMG_0149,V080-S00176,V080,2535.15,2536.14,0.99,Juegos,strong_game_domain,False,False
+IMG_0150,V047-S00075,V047,4070.99,4072.0,1.01,Google (Mat),historical_google + math_terms: funcion; lineal; lineales; ecuacion; ecuaciones; geometria; area; matematica; matematicas,False,False
+IMG_0151,V071-S00359,V071,2261.0,2262.0,1.0,YouTube,manual_episode_review,False,True
+IMG_0152,V087-S01324,V087,3468.1,3469.09,0.99,YouTube,manual_episode_review,False,True
+IMG_0153,V071-S00532,V071,3285.0,3297.0,12.0,Otro sitio,manual_episode_review,False,True
+IMG_0154,V007-S00261,V007,1185.23,1194.21,8.98,Google (Mat),historical_google + math_terms: matematica,False,False
+IMG_0155,V097-S00057,V097,1419.0,1420.0,1.0,GeoGebra,historical_base,False,False
+IMG_0156,V090-S00412,V090,2269.95,2272.94,2.99,Otro sitio,manual_episode_review,False,True
+IMG_0157,V098-S00295,V098,2244.0,2245.0,1.0,YouTube,temporal_interpolation_30s_between_YouTube,True,False
+IMG_0158,V047-S00057,V047,3598.7,3600.72,2.02,Google,historical_google_without_math_evidence,False,False
+IMG_0159,V073-S00085,V073,779.78,780.78,1.0,Google (Mat),historical_google + math_terms: triangulo; triangulo equilatero; area; perimetro; calcular,False,False
+IMG_0160,V100-S00153,V100,1906.61,1910.55,3.94,Google,historical_google_without_math_evidence,False,False
+IMG_0161,V028-S00148,V028,2306.5,2307.5,1.0,Quinan,historical_base,False,False
+IMG_0162,V003-S00155,V003,2017.14,2024.75,7.61,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0163,V027-S00076,V027,2939.33,2940.31,0.98,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0164,V087-S00650,V087,2605.54,2606.53,0.99,YouTube,manual_episode_review,False,True
+IMG_0165,V037-S00327,V037,1432.46,1433.46,1.0,Juegos,manual_episode_review,False,True
+IMG_0166,V095-S00213,V095,2502.0,2503.0,1.0,GeoGebra,historical_base,False,False
+IMG_0167,V089-S00171,V089,4483.0,4483.61,0.61,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0168,V006-S00049,V006,1266.0,1268.0,2.0,Otro sitio,manual_episode_review,False,True
+IMG_0169,V038-S00044,V038,1611.64,1642.21,30.57,Quinan,historical_base,False,False
+IMG_0170,V038-S00035,V038,1512.02,1518.92,6.9,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0171,V010-S00011,V010,917.58,918.6,1.02,Google (Mat),historical_google + math_terms: funcion; funciones; funcion lineal; lineal; lineales; afin; afines; grafica; dominio; matematica,False,False
+IMG_0172,V021-S00777,V021,2408.32,2411.25,2.93,Google (Mat),historical_google + math_terms: funcion; cuadratica,False,False
+IMG_0173,V093-S00081,V093,1240.74,1280.28,39.54,Quinan,historical_base,False,False
+IMG_0174,V075-S00057,V075,334.13,338.08,3.95,GeoGebra,historical_base,False,False
+IMG_0175,V037-S00017,V037,161.04,164.02,2.98,Juegos,manual_episode_review,False,True
+IMG_0176,V037-S00302,V037,1407.61,1408.61,1.0,Juegos,manual_episode_review,False,True
+IMG_0177,V043-S00112,V043,3579.29,3580.32,1.03,Google (Mat),historical_google + math_terms: funcion; ecuacion; grafica; grafico; graficar,False,False
+IMG_0178,V095-S00277,V095,3359.0,3363.0,4.0,Juegos,manual_episode_review,False,True
+IMG_0179,V037-S00121,V037,436.4,437.39,0.99,Juegos,manual_episode_review,False,True
+IMG_0180,V087-S01250,V087,3387.79,3388.79,1.0,YouTube,manual_episode_review,False,True
+IMG_0181,V080-S00238,V080,2911.9,2911.9,0.0,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0182,V021-S01233,V021,3478.79,3479.77,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0183,V097-S00112,V097,1862.0,1863.0,1.0,GeoGebra,historical_base,False,False
+IMG_0184,V021-S00441,V021,1696.95,1700.85,3.9,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0185,V037-S00413,V037,1519.94,1520.94,1.0,Juegos,manual_episode_review,False,True
+IMG_0186,V097-S00200,V097,3655.0,3778.0,123.0,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0187,V087-S00165,V087,1290.87,1291.86,0.99,YouTube,strong_youtube_evidence,False,False
+IMG_0188,V087-S00485,V087,2365.61,2370.56,4.95,YouTube,strong_youtube_evidence,False,False
+IMG_0189,V044-S00058,V044,2203.38,2208.5,5.12,Quinan,historical_base,False,False
+IMG_0190,V071-S00136,V071,1224.0,1226.0,2.0,Google,historical_google_without_math_evidence,False,False
+IMG_0191,V070-S00260,V070,4150.0,4154.0,4.0,Google,historical_google_without_math_evidence,False,False
+IMG_0192,V090-S00369,V090,2124.79,2127.77,2.98,Quinan,manual_episode_review,False,True
+IMG_0193,V037-S00013,V037,145.14,150.11,4.97,Juegos,strong_game_domain,False,False
+IMG_0194,V093-S00103,V093,1459.23,1460.22,0.99,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0195,V084-S00172,V084,2450.87,2451.86,0.99,Juegos,manual_episode_review,False,True
+IMG_0196,V087-S00972,V087,3011.04,3012.03,0.99,YouTube,manual_episode_review,False,True
+IMG_0197,V048-S00005,V048,1239.74,1253.71,13.97,Google,historical_google_without_math_evidence,False,False
+IMG_0198,V021-S00879,V021,2620.07,2621.05,0.98,Google (Mat),historical_google + math_terms: funcion,False,False
+IMG_0199,V097-S00155,V097,2831.0,2848.0,17.0,GeoGebra,historical_base,False,False
+IMG_0200,V021-S00882,V021,2623.0,2627.88,4.88,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0201,V003-S00022,V003,47.36,48.36,1.0,Quinan,historical_base,False,False
+IMG_0202,V008-S00335,V008,2100.87,2101.89,1.02,Juegos,strong_game_domain,False,False
+IMG_0203,V051-S00082,V051,754.53,755.51,0.98,Quinan,temporal_interpolation_30s_between_Quinan,True,False
+IMG_0204,V073-S00077,V073,750.75,751.75,1.0,Google (Mat),historical_google + math_terms: triangulo; cuadrado; area; perimetro,False,False
+IMG_0205,V097-S00036,V097,1144.0,1167.0,23.0,GeoGebra,historical_base,False,False
+IMG_0206,V005-S00145,V005,875.94,880.94,5.0,Google,historical_google_without_math_evidence,False,False
+IMG_0207,V005-S00148,V005,890.94,923.93,32.99,Google,historical_google_without_math_evidence,False,False
+IMG_0208,V037-S00214,V037,1308.21,1309.2,0.99,Juegos,manual_episode_review,False,True
+IMG_0209,V046-S00111,V046,5177.99,5178.96,0.97,Otro sitio,manual_episode_review,False,True
+IMG_0210,V099-S00024,V099,1412.0,1415.0,3.0,GeoGebra,historical_base,False,False
+IMG_0211,V097-S00058,V097,1420.0,1421.0,1.0,GeoGebra,historical_base,False,False
+IMG_0212,V007-S00009,V007,12.97,14.97,2.0,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0213,V070-S00127,V070,950.0,951.0,1.0,Quinan,temporal_interpolation_30s_between_Quinan,True,False
+IMG_0214,V099-S00035,V099,2556.0,3599.43,1043.43,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0215,V096-S00207,V096,1480.74,1486.73,5.99,GeoGebra,historical_base,False,False
+IMG_0216,V061-S00460,V061,2635.58,2638.54,2.96,Google,historical_google_without_math_evidence,False,False
+IMG_0217,V055-S00032,V055,294.34,295.35,1.01,Quinan,historical_base,False,False
+IMG_0218,V027-S00019,V027,631.39,633.34,1.95,Quinan,historical_base,False,False
+IMG_0219,V097-S00196,V097,3363.0,3567.0,204.0,Otro sitio,manual_episode_review,False,True
+IMG_0220,V095-S00067,V095,826.0,830.0,4.0,GeoGebra,historical_base,False,False
+IMG_0221,V095-S00172,V095,1688.0,1689.0,1.0,GeoGebra,historical_base,False,False
+IMG_0222,V095-S00148,V095,1612.0,1618.0,6.0,GeoGebra,historical_base,False,False
+IMG_0223,V077-S00096,V077,1732.77,1826.33,93.56,Google (Mat),historical_google + math_terms: rectangulo; area; calcular,False,False
+IMG_0224,V071-S00738,V071,4434.0,4435.0,1.0,YouTube,manual_episode_review,False,True
+IMG_0225,V087-S00169,V087,1296.82,1306.74,9.92,Google,historical_google_without_math_evidence,False,False
+IMG_0226,V064-S00018,V064,409.27,429.69,20.42,Quinan,historical_base,False,False
+IMG_0227,V073-S00199,V073,1768.77,1770.77,2.0,Quinan,temporal_interpolation_30s_between_Quinan,True,False
+IMG_0228,V037-S00326,V037,1431.47,1432.46,0.99,Juegos,manual_episode_review,False,True
+IMG_0229,V054-S00125,V054,1316.21,1317.26,1.05,Quinan,historical_base,False,False
+IMG_0230,V047-S00108,V047,4407.04,4413.1,6.06,Google (Mat),manual_episode_review,False,True
+IMG_0231,V021-S01036,V021,3030.89,3031.87,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0232,V095-S00099,V095,1254.0,1293.0,39.0,Google,manual_episode_review,False,True
+IMG_0233,V021-S00740,V021,2362.46,2363.43,0.97,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0234,V021-S00727,V021,2337.09,2339.04,1.95,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0235,V021-S00686,V021,2214.13,2215.11,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0236,V028-S00115,V028,1640.6,1642.61,2.01,Screen Recorder,manual_episode_review,False,True
+IMG_0237,V087-S01059,V087,3177.61,3178.6,0.99,YouTube,manual_episode_review,False,True
+IMG_0238,V041-S00223,V041,3349.31,3358.46,9.15,Otro sitio,manual_episode_review,False,True
+IMG_0239,V042-S00023,V042,792.0,804.0,12.0,Google,historical_google_without_math_evidence,False,False
+IMG_0240,V087-S00896,V087,2934.7,2935.69,0.99,YouTube,manual_episode_review,False,True
+IMG_0241,V021-S00704,V021,2241.45,2242.43,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0242,V049-S00084,V049,4670.68,4671.8,1.12,Quinan,historical_base,False,False
+IMG_0243,V082-S00054,V082,2814.17,2869.49,55.32,Quinan,historical_base,False,False
+IMG_0244,V021-S01120,V021,3237.77,3238.74,0.97,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0245,V087-S00569,V087,2509.37,2510.36,0.99,YouTube,manual_episode_review,False,True
+IMG_0246,V022-S00004,V022,62.12,63.14,1.02,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0247,V035-S00103,V035,2336.82,2513.44,176.62,Otro sitio,manual_episode_review,False,True
+IMG_0248,V071-S00355,V071,2244.0,2247.0,3.0,Google (Mat),historical_google + math_terms: geometria; triangulo; triangulo equilatero,False,False
+IMG_0249,V095-S00103,V095,1308.0,1310.0,2.0,Otro sitio,manual_episode_review,False,True
+IMG_0250,V074-S00141,V074,1477.0,1480.0,3.0,Quinan,historical_base,False,False
+IMG_0251,V087-S00713,V087,2723.52,2724.51,0.99,YouTube,manual_episode_review,False,True
+IMG_0252,V061-S00386,V061,2380.02,2381.01,0.99,Juegos,manual_episode_review,False,True
+IMG_0253,V037-S00252,V037,1356.92,1357.91,0.99,Juegos,manual_episode_review,False,True
+IMG_0254,V090-S00456,V090,2468.81,2473.78,4.97,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0255,V084-S00221,V084,2816.72,2818.7,1.98,Otro sitio,manual_episode_review,False,True
+IMG_0256,V097-S00180,V097,3055.0,3056.0,1.0,Otro sitio,manual_episode_review,False,True
+IMG_0257,V092-S00004,V092,10.0,17.0,7.0,Otro sitio,manual_episode_review,False,True
+IMG_0258,V021-S00592,V021,2006.28,2007.26,0.98,Wikipedia,temporal_interpolation_30s_between_Wikipedia,True,False
+IMG_0259,V098-S00201,V098,1904.0,1934.0,30.0,YouTube,strong_youtube_evidence,False,False
+IMG_0260,V047-S00067,V047,4025.58,4043.74,18.16,Google,historical_google_without_math_evidence,False,False
+IMG_0261,V007-S00269,V007,1239.11,1395.33,156.22,Otro sitio,manual_episode_review,False,True
+IMG_0262,V096-S00074,V096,814.66,817.65,2.99,Google,manual_episode_review,False,True
+IMG_0263,V021-S00901,V021,2696.19,2700.09,3.9,Wikipedia,temporal_interpolation_30s_between_Wikipedia,True,False
+IMG_0264,V096-S00158,V096,1336.16,1338.15,1.99,GeoGebra,temporal_interpolation_30s_between_GeoGebra,True,False
+IMG_0265,V071-S00570,V071,3712.0,3713.0,1.0,Google,temporal_interpolation_30s_between_Google,True,False
+IMG_0266,V007-S00167,V007,880.94,881.94,1.0,Google,historical_google_without_math_evidence,False,False
+IMG_0267,V021-S00305,V021,1406.15,1407.13,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0268,V039-S00060,V039,2244.75,2462.41,217.66,Otro sitio,manual_episode_review,False,True
+IMG_0269,V033-S00077,V033,1368.73,1370.79,2.06,Quinan,historical_base,False,False
+IMG_0270,V096-S00318,V096,2075.04,2083.01,7.97,GeoGebra,historical_base,False,False
+IMG_0271,V087-S00813,V087,2844.48,2845.47,0.99,YouTube,manual_episode_review,False,True
+IMG_0272,V054-S00022,V054,172.96,174.02,1.06,Google (Mat),manual_episode_review,False,True
+IMG_0273,V087-S01045,V087,3155.79,3156.79,1.0,YouTube,manual_episode_review,False,True
+IMG_0274,V021-S00769,V021,2395.63,2396.61,0.98,Google (Mat),historical_google + math_terms: funcion; cuadratica,False,False
+IMG_0275,V052-S00037,V052,758.3,764.06,5.76,Quinan,historical_base,False,False
+IMG_0276,V087-S01380,V087,3556.34,3559.32,2.98,YouTube,manual_episode_review,False,True
+IMG_0277,V083-S00019,V083,961.0,966.0,5.0,Otro sitio,manual_episode_review,False,True
+IMG_0278,V086-S00070,V086,922.0,926.0,4.0,Juegos,strong_game_domain,False,False
+IMG_0279,V049-S00098,V049,4797.16,4798.28,1.12,Google,manual_episode_review,False,True
+IMG_0280,V021-S00324,V021,1432.5,1433.48,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0281,V036-S00111,V036,1028.86,1030.83,1.97,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0282,V089-S00017,V089,467.0,469.0,2.0,Quinan,historical_base,False,False
+IMG_0283,V021-S00980,V021,2880.62,2881.59,0.97,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0284,V043-S00063,V043,3099.23,3108.52,9.29,Google,manual_episode_review,False,True
+IMG_0285,V096-S00161,V096,1350.12,1364.08,13.96,GeoGebra,strong_geogebra_evidence,False,False
+IMG_0286,V087-S01332,V087,3476.03,3477.03,1.0,YouTube,manual_episode_review,False,True
+IMG_0287,V073-S00276,V073,2845.84,2848.85,3.01,Google (Mat),historical_google + math_terms: triangulo; triangulo equilatero; rectangulo; vertice; calculator,False,False
+IMG_0288,V068-S00079,V068,1265.0,1267.0,2.0,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0289,V037-S00556,V037,3666.16,3675.1,8.94,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0290,V026-S00167,V026,2177.92,2178.92,1.0,Quinan,historical_base,False,False
+IMG_0291,V087-S01120,V087,3239.08,3240.07,0.99,YouTube,manual_episode_review,False,True
+IMG_0292,V075-S00056,V075,326.22,334.13,7.91,GeoGebra,historical_base,False,False
+IMG_0293,V096-S00164,V096,1366.07,1367.07,1.0,GeoGebra,historical_base,False,False
+IMG_0294,V083-S00165,V083,1993.0,1994.0,1.0,Google,historical_google_without_math_evidence,False,False
+IMG_0295,V075-S00076,V075,596.09,599.06,2.97,Google (Mat),historical_google + math_terms: triangulo; triangulo equilatero; rectangulo; area; perimetro; calcular; calculator,False,False
+IMG_0296,V083-S00005,V083,347.0,418.0,71.0,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0297,V041-S00232,V041,3720.55,3729.7,9.15,Otro sitio,manual_episode_review,False,True
+IMG_0298,V021-S00292,V021,1393.47,1394.44,0.97,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0299,V094-S00052,V094,1101.34,1102.33,0.99,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0300,V087-S01320,V087,3464.14,3465.13,0.99,YouTube,manual_episode_review,False,True
+IMG_0301,V087-S00830,V087,2861.33,2862.32,0.99,YouTube,manual_episode_review,False,True
+IMG_0302,V095-S00295,V095,3581.0,3583.0,2.0,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0303,V021-S00863,V021,2597.63,2598.6,0.97,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0304,V095-S00092,V095,1170.0,1171.0,1.0,GeoGebra,historical_base,False,False
+IMG_0305,V090-S00421,V090,2292.82,2293.82,1.0,Otro sitio,manual_episode_review,False,True
+IMG_0306,V021-S00278,V021,1368.1,1370.05,1.95,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0307,V087-S00500,V087,2404.27,2405.26,0.99,YouTube,strong_youtube_evidence,False,False
+IMG_0308,V037-S00260,V037,1364.87,1365.86,0.99,Juegos,manual_episode_review,False,True
+IMG_0309,V008-S00168,V008,1805.13,1806.15,1.02,Quinan,historical_base,False,False
+IMG_0310,V087-S00836,V087,2867.28,2868.27,0.99,YouTube,manual_episode_review,False,True
+IMG_0311,V095-S00161,V095,1630.0,1631.0,1.0,GeoGebra,historical_base,False,False
+IMG_0312,V049-S00104,V049,5552.66,5585.12,32.46,Otro sitio,manual_episode_review,False,True
+IMG_0313,V071-S00607,V071,3833.0,3834.0,1.0,Google,historical_google_without_math_evidence,False,False
+IMG_0314,V021-S00343,V021,1460.8,1461.78,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0315,V021-S00549,V021,1925.29,1926.27,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0316,V097-S00168,V097,2948.0,2998.0,50.0,GeoGebra,historical_base,False,False
+IMG_0317,V043-S00117,V043,5389.07,5390.1,1.03,Otro sitio,manual_episode_review,False,True
+IMG_0318,V047-S00104,V047,4336.4,4343.47,7.07,Google (Mat),temporal_interpolation_30s_between_Google (Mat),True,False
+IMG_0319,V021-S00908,V021,2726.44,2731.32,4.88,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0320,V037-S00552,V037,3641.3,3653.23,11.93,Google,historical_google_without_math_evidence,False,False
+IMG_0321,V036-S00015,V036,473.04,485.85,12.81,Quinan,historical_base,False,False
+IMG_0322,V097-S00175,V097,3025.0,3043.0,18.0,Otro sitio,manual_episode_review,False,True
+IMG_0323,V087-S00108,V087,520.51,521.5,0.99,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0324,V096-S00151,V096,1262.37,1263.37,1.0,GeoGebra,historical_base,False,False
+IMG_0325,V095-S00094,V095,1172.0,1236.0,64.0,GeoGebra,historical_base,False,False
+IMG_0326,V096-S00093,V096,901.41,902.41,1.0,Otro sitio,manual_episode_review,False,True
+IMG_0327,V071-S00173,V071,1469.0,1470.0,1.0,Google,historical_google_without_math_evidence,False,False
+IMG_0328,V006-S00020,V006,928.0,929.0,1.0,Google (Mat),historical_google + math_terms: funcion; funcion lineal; lineal; afin,False,False
+IMG_0329,V063-S00031,V063,441.95,445.1,3.15,Quinan,historical_base,False,False
+IMG_0330,V080-S00145,V080,2223.83,2225.81,1.98,Juegos,manual_episode_review,False,True
+IMG_0331,V090-S00418,V090,2287.85,2289.84,1.99,Otro sitio,manual_episode_review,False,True
+IMG_0332,V008-S00037,V008,649.81,671.3,21.49,Google (Mat),historical_google + math_terms: funcion; funciones; funcion lineal; funcion afin; lineal; lineales; afin; afines; area; grafica,False,False
+IMG_0333,V042-S00025,V042,816.0,887.0,71.0,Otro sitio,manual_episode_review,False,True
+IMG_0334,V086-S00078,V086,933.0,934.0,1.0,Juegos,manual_episode_review,False,True
+IMG_0335,V061-S00479,V061,2688.87,2692.82,3.95,Juegos,manual_episode_review,False,True
+IMG_0336,V098-S00128,V098,1382.0,1386.0,4.0,Google,manual_episode_review,False,True
+IMG_0337,V037-S00539,V037,3396.76,3412.67,15.91,Google,historical_google_without_math_evidence,False,False
+IMG_0338,V097-S00138,V097,2165.0,2304.0,139.0,Google (Mat),historical_google + math_terms: funcion; funcion cuadratica; cuadratica; ecuacion; vertice; parabola; matematica; matematicas; calcular; calculator,False,False
+IMG_0339,V087-S00311,V087,1905.57,1906.56,0.99,Google,historical_google_without_math_evidence,False,False
+IMG_0340,V071-S00410,V071,2346.0,2347.0,1.0,Google,historical_google_without_math_evidence,False,False
+IMG_0341,V087-S01258,V087,3401.68,3402.67,0.99,YouTube,manual_episode_review,False,True
+IMG_0342,V086-S00272,V086,2913.0,2922.0,9.0,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0343,V072-S00095,V072,3017.0,3023.0,6.0,Quinan,manual_episode_review,False,True
+IMG_0344,V005-S00150,V005,956.93,961.93,5.0,Google,historical_google_without_math_evidence,False,False
+IMG_0345,V087-S00411,V087,2224.82,2225.81,0.99,YouTube,strong_youtube_evidence,False,False
+IMG_0346,V080-S00109,V080,1978.94,1980.92,1.98,Juegos,strong_game_domain,False,False
+IMG_0347,V098-S00081,V098,906.0,909.0,3.0,Juegos,manual_episode_review,False,True
+IMG_0348,V037-S00270,V037,1374.81,1375.8,0.99,Juegos,manual_episode_review,False,True
+IMG_0349,V005-S00139,V005,811.94,814.94,3.0,Google,historical_google_without_math_evidence,False,False
+IMG_0350,V021-S00148,V021,780.65,781.63,0.98,Juegos,manual_episode_review,False,True
+IMG_0351,V075-S00054,V075,323.25,324.24,0.99,GeoGebra,historical_base,False,False
+IMG_0352,V080-S00211,V080,2672.96,2755.25,82.29,Juegos,manual_episode_review,False,True
+IMG_0353,V040-S00025,V040,1226.85,1227.88,1.03,Quinan,historical_base,False,False
+IMG_0354,V068-S00169,V068,2247.0,2248.0,1.0,Quinan,historical_base,False,False
+IMG_0355,V087-S00591,V087,2536.14,2537.13,0.99,YouTube,manual_episode_review,False,True
+IMG_0356,V021-S00439,V021,1695.0,1695.97,0.97,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0357,V097-S00161,V097,2916.0,2917.0,1.0,GeoGebra,historical_base,False,False
+IMG_0358,V043-S00103,V043,3524.57,3526.64,2.07,Google,manual_episode_review,False,True
+IMG_0359,V061-S00104,V061,976.87,978.85,1.98,Quinan,historical_base,False,False
+IMG_0360,V050-S00100,V050,882.26,891.91,9.65,Quinan,historical_base,False,False
+IMG_0361,V037-S00403,V037,1510.0,1511.0,1.0,Juegos,manual_episode_review,False,True
+IMG_0362,V096-S00137,V096,1142.72,1144.71,1.99,GeoGebra,historical_base,False,False
+IMG_0363,V068-S00182,V068,2310.0,2312.0,2.0,Google,historical_google_without_math_evidence,False,False
+IMG_0364,V087-S01147,V087,3271.79,3272.79,1.0,YouTube,manual_episode_review,False,True
+IMG_0365,V087-S01071,V087,3189.5,3190.5,1.0,YouTube,manual_episode_review,False,True
+IMG_0366,V033-S00022,V033,900.13,901.16,1.03,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0367,V097-S00160,V097,2907.0,2916.0,9.0,GeoGebra,historical_base,False,False
+IMG_0368,V072-S00084,V072,2143.0,2147.0,4.0,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0369,V068-S00075,V068,1170.0,1181.0,11.0,Google (Mat),historical_google + math_terms: geometria; triangulo; triangulo equilatero; area; perimetro; matematica; matematicas,False,False
+IMG_0370,V071-S00436,V071,2679.0,2680.0,1.0,YouTube,manual_episode_review,False,True
+IMG_0371,V096-S00219,V096,1520.63,1522.62,1.99,GeoGebra,historical_base,False,False
+IMG_0372,V077-S00097,V077,1826.33,1832.43,6.1,Otro sitio,manual_episode_review,False,True
+IMG_0373,V070-S00268,V070,4194.0,4245.0,51.0,Otro sitio,manual_episode_review,False,True
+IMG_0374,V062-S00218,V062,1556.09,1559.07,2.98,Quinan,historical_base,False,False
+IMG_0375,V021-S00955,V021,2834.75,2835.73,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0376,V087-S00366,V087,2013.64,2014.63,0.99,YouTube,strong_youtube_evidence,False,False
+IMG_0377,V061-S00381,V061,2366.2,2367.19,0.99,Otro sitio,manual_episode_review,False,True
+IMG_0378,V025-S00085,V025,953.19,956.12,2.93,Quinan,historical_base,False,False
+IMG_0379,V071-S00281,V071,1880.0,1881.0,1.0,Quinan,historical_base,False,False
+IMG_0380,V037-S00316,V037,1421.53,1422.52,0.99,Juegos,manual_episode_review,False,True
+IMG_0381,V097-S00061,V097,1423.0,1424.0,1.0,GeoGebra,historical_base,False,False
+IMG_0382,V018-S00074,V018,265.96,266.97,1.01,Quinan,historical_base,False,False
+IMG_0383,V037-S00093,V037,406.58,407.57,0.99,Juegos,manual_episode_review,False,True
+IMG_0384,V084-S00110,V084,1980.92,1981.91,0.99,Juegos,strong_game_domain,False,False
+IMG_0385,V097-S00178,V097,3049.0,3051.0,2.0,Otro sitio,manual_episode_review,False,True
+IMG_0386,V087-S00316,V087,1910.53,1911.52,0.99,YouTube,strong_youtube_evidence,False,False
+IMG_0387,V021-S00536,V021,1911.63,1912.6,0.97,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0388,V040-S00180,V040,2408.37,4536.43,2128.06,Otro sitio,manual_episode_review,False,True
+IMG_0389,V071-S00639,V071,4115.0,4116.0,1.0,Google,temporal_interpolation_30s_between_Google,True,False
+IMG_0390,V041-S00241,V041,3890.41,3905.66,15.25,Google,historical_google_without_math_evidence,False,False
+IMG_0391,V074-S00190,V074,4008.0,4009.0,1.0,Otro sitio,manual_episode_review,False,True
+IMG_0392,V021-S00327,V021,1438.36,1439.33,0.97,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0393,V011-S00047,V011,427.81,428.82,1.01,Quinan,historical_base,False,False
+IMG_0394,V005-S00160,V005,1041.93,1049.92,7.99,Google,historical_google_without_math_evidence,False,False
+IMG_0395,V096-S00138,V096,1144.71,1147.7,2.99,GeoGebra,historical_base,False,False
+IMG_0396,V084-S00210,V084,2671.97,2672.96,0.99,Juegos,manual_episode_review,False,True
+IMG_0397,V043-S00107,V043,3535.93,3558.64,22.71,Google,manual_episode_review,False,True
+IMG_0398,V071-S00147,V071,1252.0,1254.0,2.0,Juegos,manual_episode_review,False,True
+IMG_0399,V008-S00073,V008,923.03,927.12,4.09,Google (Mat),historical_google + math_terms: funcion; funciones; funcion lineal; funcion afin; lineal; lineales; afin; afines; area; matematica,False,False
+IMG_0400,V096-S00221,V096,1524.62,1526.61,1.99,GeoGebra,historical_base,False,False
+IMG_0401,V005-S00159,V005,1010.93,1041.93,31.0,Google,historical_google_without_math_evidence,False,False
+IMG_0402,V047-S00054,V047,3288.88,3342.37,53.49,Otro sitio,manual_episode_review,False,True
+IMG_0403,V071-S00130,V071,1199.0,1200.0,1.0,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0404,V001-S00062,V001,277.8,278.78,0.98,Quinan,historical_base,False,False
+IMG_0405,V088-S00001,V088,0.0,2.0,2.0,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0406,V021-S00753,V021,2375.14,2376.12,0.98,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0407,V010-S00001,V010,0.0,865.87,865.87,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0408,V032-S00125,V032,768.89,769.98,1.09,Quinan,historical_base,False,False
+IMG_0409,V021-S00488,V021,1780.87,1781.84,0.97,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0410,V078-S00009,V078,1550.0,1741.0,191.0,Quinan,historical_base,False,False
+IMG_0411,V037-S00090,V037,403.6,404.59,0.99,Juegos,manual_episode_review,False,True
+IMG_0412,V095-S00168,V095,1643.0,1645.0,2.0,GeoGebra,historical_base,False,False
+IMG_0413,V021-S01032,V021,3008.45,3016.25,7.8,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0414,V045-S00017,V045,249.84,254.76,4.92,Quinan,historical_base,False,False
+IMG_0415,V024-S00019,V024,974.75,975.73,0.98,Quinan,historical_base,False,False
+IMG_0416,V043-S00067,V043,3113.68,3115.75,2.07,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0417,V071-S00528,V071,3257.0,3266.0,9.0,Otro sitio,manual_episode_review,False,True
+IMG_0418,V095-S00037,V095,590.0,596.0,6.0,Google (Mat),historical_google + math_terms: funcion; funcion cuadratica; cuadratica,False,False
+IMG_0419,V095-S00102,V095,1307.0,1308.0,1.0,Otro sitio,manual_episode_review,False,True
+IMG_0420,V047-S00130,V047,5259.79,5795.83,536.04,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0421,V060-S00043,V060,466.11,469.88,3.77,Quinan,historical_base,False,False
+IMG_0422,V021-S00510,V021,1834.54,1835.51,0.97,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0423,V098-S00122,V098,1346.0,1363.0,17.0,Otro sitio,manual_episode_review,False,True
+IMG_0424,V071-S00463,V071,2716.0,2717.0,1.0,YouTube,manual_episode_review,False,True
+IMG_0425,V041-S00047,V041,253.26,255.29,2.03,Quinan,historical_base,False,False
+IMG_0426,V098-S00147,V098,1553.0,1554.0,1.0,Google (Mat),historical_google + math_terms: funcion; funcion cuadratica; cuadratica,False,False
+IMG_0427,V071-S00784,V071,4483.0,4484.0,1.0,YouTube,manual_episode_review,False,True
+IMG_0428,V080-S00209,V080,2670.97,2671.97,1.0,Juegos,manual_episode_review,False,True
+IMG_0429,V005-S00184,V005,1237.91,1239.91,2.0,Quinan,historical_base,False,False
+IMG_0430,V030-S00001,V030,0.0,9.25,9.25,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0431,V008-S00145,V008,1663.91,1665.96,2.05,Juegos,strong_game_domain,False,False
+IMG_0432,V095-S00138,V095,1530.0,1533.0,3.0,GeoGebra,historical_base,False,False
+IMG_0433,V070-S00271,V070,4265.0,4268.0,3.0,Screen Recorder,strong_screen_recorder_page,False,False
+IMG_0434,V097-S00157,V097,2849.0,2852.0,3.0,GeoGebra,historical_base,False,False
+IMG_0435,V096-S00211,V096,1493.71,1495.7,1.99,GeoGebra,historical_base,False,False
+IMG_0436,V080-S00099,V080,1894.67,1895.66,0.99,Juegos,strong_game_domain,False,False
+IMG_0437,V021-S00295,V021,1396.4,1397.37,0.97,Wikipedia,strong_wikipedia_evidence,False,False
+IMG_0438,V095-S00089,V095,1155.0,1159.0,4.0,GeoGebra,historical_base,False,False
+IMG_0439,V037-S00305,V037,1410.6,1411.59,0.99,Juegos,manual_episode_review,False,True
+IMG_0440,V099-S00019,V099,1238.0,1385.0,147.0,Otro sitio,manual_episode_review,False,True
+IMG_0441,V006-S00041,V006,996.0,997.0,1.0,Google (Mat),temporal_interpolation_30s_between_Google (Mat),True,False
+IMG_0442,V095-S00154,V095,1623.0,1624.0,1.0,GeoGebra,historical_base,False,False
+IMG_0443,V008-S00061,V008,880.05,882.1,2.05,Google,manual_episode_review,False,True
+IMG_0444,V096-S00200,V096,1473.77,1474.76,0.99,GeoGebra,historical_base,False,False
+IMG_0445,V071-S00581,V071,3736.0,3740.0,4.0,Google (Mat),historical_google + math_terms: rectangulo; area,False,False
+IMG_0446,V071-S00545,V071,3465.0,3496.0,31.0,Otro sitio,manual_episode_review,False,True
+IMG_0447,V037-S00230,V037,1332.06,1333.06,1.0,Juegos,manual_episode_review,False,True
+IMG_0448,V008-S00237,V008,1948.4,1949.42,1.02,Juegos,strong_game_domain,False,False
+IMG_0449,V095-S00113,V095,1375.0,1379.0,4.0,GeoGebra,historical_base,False,False
+IMG_0450,V086-S00088,V086,943.0,944.0,1.0,Juegos,manual_episode_review,False,True

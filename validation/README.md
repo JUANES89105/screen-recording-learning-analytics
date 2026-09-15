@@ -20,6 +20,13 @@ SHA-256:
 26 disagreements, 94.22% observed agreement, Cohen's kappa 0.9338, all three
 pipeline-human comparisons, category metrics, and confusion matrices.
 
+`data/processed/human_validation_sample_manifest.csv` links all 450 anonymous
+image IDs to their anonymized public segments. It permits verification of the
+balanced categories, 85 represented videos, and uniqueness of the realized
+sample. The fixed seed documents the historical draw; exact regeneration of
+that draw requires the restricted screenshot sampling frame and its original
+ordering.
+
 ## Privacy boundary
 
 The raw workbook is intentionally excluded from the public package. Its

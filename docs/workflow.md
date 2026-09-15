@@ -57,6 +57,20 @@ The command applies the historical gates, candidate-episode grouping,
 30-second context rule, and privacy-safe expert episode decisions, then checks
 the result against `corpus_100_videos_public_final.csv`.
 
+## Derived indicators
+
+All nonrestricted descriptive indicators reported from the final labels are
+generated directly from the public final CSV:
+
+```bash
+python -m src.compute_digital_activity_indicators \
+  --output-dir /tmp/digital_activity_indicators
+```
+
+The command writes category frequencies and durations, percentage summaries,
+per-video transition counts, total and distributional transition statistics,
+ranked directed transition pairs, and a directed transition matrix.
+
 ## Why `Otro sitio` is retained
 
 `Otro sitio` is an explicit residual category. It can contain OCR failures,

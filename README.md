@@ -96,11 +96,13 @@ The repository contains cleaned implementations of the main computational stages
 ├── data/
 │   └── processed/
 │       ├── corpus_100_videos_public_final.csv
+│       ├── human_validation_sample_manifest.csv
 │       ├── refinement_input_public.csv
 │       └── manual_review_decisions_public.csv
 ├── docs/
 ├── src/
 │   ├── classifier.py
+│   ├── compute_digital_activity_indicators.py
 │   ├── config.py
 │   ├── export_public_dataset.py
 │   ├── extraction.py
@@ -115,6 +117,10 @@ The repository contains cleaned implementations of the main computational stages
 ├── requirements.txt
 └── pyproject.toml
 ```
+
+`src/export_public_dataset.py` is retained as a historical first-version export
+utility. It does not generate `corpus_100_videos_public_final.csv`; use the
+final-classification reproduction command below for the authoritative dataset.
 
 ## Installation
 
@@ -232,11 +238,45 @@ python -m src.reproduce_final_classification \
 
 The command must report 18,829/18,829 agreement for labels, methods, and temporal/manual flags, together with 1,482 transitions and 307,976.40 seconds.
 
+## Digital-activity indicators
+
+The manuscript's category and transition indicators are derived directly from
+the authoritative final segment dataset. Regenerate all category counts,
+percentages, durations, duration percentages, per-video transition counts,
+transition summary statistics, ranked transition pairs, and the transition
+matrix with:
+
+```bash
+python -m src.compute_digital_activity_indicators \
+  --output-dir /tmp/digital_activity_indicators
+```
+
+The command does not depend on restricted recordings, screenshots, or OCR.
+
 ## Human validation
 
 The definitive second-round validation included 450 screenshots, with 50 sampled from each final category. Two evaluators independently assigned categories while blind to the pipeline labels and to each other's responses. The privacy-safe labels used for analysis are in `data/processed/human_validation_annotations.csv`; `src/evaluate_human_validation.py` reproduces the global metrics, per-category metrics, and confusion matrices.
 
 The evaluators agreed on 424 of 450 screenshots (94.22%; Cohen's kappa 0.9338). The raw workbook is not part of the public package because it contains unnecessary response timestamps. See `validation/README.md` for the authoritative-source and privacy boundary.
+
+`data/processed/human_validation_sample_manifest.csv` links each anonymous
+validation image ID to its public segment ID, anonymized video, temporal
+interval, pipeline category, classification method, and temporal/manual flags.
+It permits public verification of the realized sample without exposing images,
+paths, hashes, or timestamps from the annotation platform.
+
+## Public traceability
+
+Each final segment can be joined to `refinement_input_public.csv` through its
+unique combination of anonymized video and temporal fields. This supports
+public inspection of the final category, classification method,
+temporal/manual flags, privacy-safe OCR-derived evidence, and—when applicable—
+the corresponding expert episode decision.
+
+Traceability from a public row to the original screenshot or recording remains
+restricted. The public package therefore supports segment-level procedural
+traceability and auditability, while direct inspection of original audiovisual
+evidence requires authorized access to the protected research materials.
 
 ## Reproducibility and privacy
 

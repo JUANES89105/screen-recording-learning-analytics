@@ -1,3 +1,11 @@
+"""Historical first-version export utility.
+
+This script is retained for provenance. It exports a historical intermediate
+workbook and does not generate the authoritative final public dataset. Use
+``src.reproduce_final_classification`` for final-label reproduction and
+``src.compute_digital_activity_indicators`` for manuscript indicators.
+"""
+
 from pathlib import Path
 import re
 import pandas as pd
