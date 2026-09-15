@@ -1,7 +1,13 @@
 # Category traceability
 
-
-> **Scope of this document.** This document reconstructs the historical development of the study taxonomy and therefore mentions categories, intermediate variables, and manual decisions that are not part of the current generic classification engine. These historical descriptions should not be interpreted as hard-coded behavior of the public pipeline. In the current implementation, study-specific classification and refinement rules are defined in `config/sites.yaml`, while the Python modules provide generic rule-processing logic.
+> **Historical document — not the current 18,829-segment workflow.** The
+> 18,976-record counts, `palabra_base_2` review, expanded exploratory taxonomy,
+> and future-tense reconstruction below describe an earlier pipeline version.
+> They are retained as historical evidence and must not be used to explain or
+> reproduce the manuscript's authoritative final classification. For the
+> current provenance, inputs, and exact downstream reproduction, use
+> `docs/category_refinement.md`, `docs/data_schema.md`, `docs/workflow.md`, and
+> `src/reproduce_final_classification.py`.
 
 
 This document reconstructs how categories evolved from the initial OCR-based classification to subsequent automated refinement, manual review, validation, refined site detection, and later analytical grouping. It also distinguishes historical classification decisions from the reproducible rule-based pipeline reconstructed for the study.

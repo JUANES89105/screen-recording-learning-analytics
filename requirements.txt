@@ -5,3 +5,4 @@ opencv-python==4.11.0.86
 pytesseract>=0.3.10
 Pillow>=10
 scikit-image>=0.22
+scikit-learn>=1.4

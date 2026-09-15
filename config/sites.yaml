@@ -71,6 +71,8 @@ categories:
     strong_patterns:
       - geogebra.org
       - geogebra.org/calculator
+      - geogebra classic
+      - graphing calculator geogebra
 
     patterns:
       - geogebra
@@ -145,6 +147,8 @@ categories:
       - esmikipedia.org
       - eswvikipedia.org
       - jeswikipedia.org
+      - wikipedia, la enciclopedia
+      - la enciclopedia libre
 
     patterns:
       - wikipedia
@@ -156,6 +160,7 @@ categories:
     strong_patterns:
       - youtube.com/watch
       - youtube.com/shorts
+      - youtube.com/?
       - youtube.com/results
       - youtu.be/
 
@@ -196,6 +201,9 @@ categories:
       - recorder.caseus.com/es/grabador-de-pantalla
       - recorder.esseus.com/es/grabador-de-pantalla
       - recorder.aseus.com/es/grabador-de-pantalla
+      - grabador de pantalla gratis online
+      - free online screen recorder
+      - online-screen-recorder-brand
 
     patterns:
       - grabador de pantalla gratis online
@@ -247,3 +255,33 @@ refinement:
       reason: >
         ChatGPT was present in the initial historical classification
         but is not part of the final nine-category scheme.
+
+# ------------------------------------------------------------
+# PRIVACY-SAFE PUBLIC REPRODUCTION
+#
+# OCR text and screenshots are restricted. The public refinement
+# input therefore stores only category-level evidence flags derived
+# with the strong patterns above. These settings map those flags to
+# the same historical refinement, temporal, and review procedure.
+# ------------------------------------------------------------
+
+public_reproduction:
+  evidence_columns:
+    Wikipedia: evidence_wikipedia
+    YouTube: evidence_youtube
+    Juegos: evidence_juegos
+    GeoGebra: evidence_geogebra
+    Quinan: evidence_quinan
+    Screen Recorder: evidence_screen_recorder
+
+  evidence_methods:
+    Wikipedia: strong_wikipedia_evidence
+    YouTube: strong_youtube_evidence
+    Juegos: strong_game_domain
+    GeoGebra: strong_geogebra_evidence
+    Quinan: possible_quinan
+    Screen Recorder: strong_screen_recorder_page
+
+  matched_math_terms_column: matched_math_terms
+  episode_gap_seconds: 3
+  temporal_max_duration_seconds: 30

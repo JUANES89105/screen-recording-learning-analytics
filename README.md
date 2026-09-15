@@ -42,14 +42,14 @@ The public CSV contains the following variables:
 | Variable | Description |
 |---|---|
 | `video_id` | Anonymized video identifier |
-| `start_s` | Segment start time in seconds |
-| `end_s` | Segment end time in seconds |
+| `start_time_s` | Segment start time in seconds |
+| `end_time_s` | Segment end time in seconds |
 | `duration_s` | Segment duration in seconds |
-| `screenshot_id` | Screenshot identifier |
-| `ocr_text` | OCR-derived text associated with the segment |
-| `matched_keyword` | Keyword or textual evidence used by the classification procedure |
-| `matched_rule` | Rule associated with the classification |
 | `category` | Final digital-environment category |
+| `classification_method` | Automatic, temporal, or expert-review method that produced the final label |
+| `ocr_mode` | OCR mode retained during reprocessing |
+| `temporal_interpolation` | Whether the final label was assigned through the temporal rule |
+| `manual_review` | Whether the final label was assigned through expert episode review |
 
 No participant names, email addresses, credentials, original recordings, or private file-system paths are included in the public dataset.
 
@@ -74,7 +74,7 @@ initial rule-based classification
     ↓
 OCR reprocessing
     ↓
-classification refinement
+historical `palabra_base` plus updated-OCR refinement evidence
     ↓
 temporal-context refinement
     ↓
@@ -95,7 +95,9 @@ The repository contains cleaned implementations of the main computational stages
 │   └── sites.yaml
 ├── data/
 │   └── processed/
-│       └── corpus_100_videos_public_final.csv
+│       ├── corpus_100_videos_public_final.csv
+│       ├── refinement_input_public.csv
+│       └── manual_review_decisions_public.csv
 ├── docs/
 ├── src/
 │   ├── classifier.py
@@ -107,6 +109,7 @@ The repository contains cleaned implementations of the main computational stages
 │   ├── refine_classification.py
 │   ├── reporting.py
 │   ├── reprocess_ocr.py
+│   ├── reproduce_final_classification.py
 │   └── text_utils.py
 ├── tests/
 ├── requirements.txt
@@ -214,15 +217,26 @@ The historical corpus underwent successive refinement stages:
 
 These stages produced the final nine-category classification represented by the `category` variable in the public dataset.
 
-Intermediate research files used during these refinement stages are not included because they contain working data and information not intended for public distribution.
+The final labels were constructed from the historical `palabra_base` classification and the uniformly reprocessed OCR evidence. `palabra_base` is the original five-category automated label generated from the first OCR pass; it is an actual computational input to refinement, not an unused metadata field. Updated OCR was then used to subdivide historical Google rows and to seek stronger evidence within historical residual rows.
+
+The five-category output in `data/processed/initial_classification_summary.csv` was reconstructed later by applying `config/sites_initial.yaml` to the updated OCR. It documents how the current initial classifier behaves on the reprocessed text, but it was not the upstream label column used to create the authoritative final classification.
+
+Raw OCR text and screenshots cannot be distributed. For exact public downstream reproduction, `data/processed/refinement_input_public.csv` retains the anonymized segment times, historical `palabra_base`, OCR mode, and category-level Boolean evidence derived from the restricted OCR. It contains no OCR text, screenshot path, participant identity, or local path. Expert episode decisions are provided separately in `data/processed/manual_review_decisions_public.csv` without review notes or private paths.
+
+Run the complete privacy-safe downstream reproduction and verify it against the authoritative final dataset:
+
+```bash
+python -m src.reproduce_final_classification \
+  --output /tmp/corpus_100_videos_reproduced.csv
+```
+
+The command must report 18,829/18,829 agreement for labels, methods, and temporal/manual flags, together with 1,482 transitions and 307,976.40 seconds.
 
 ## Human validation
 
-An independent human-validation study of the final classification is being conducted using a stratified sample from the nine categories.
+The definitive second-round validation included 450 screenshots, with 50 sampled from each final category. Two evaluators independently assigned categories while blind to the pipeline labels and to each other's responses. The privacy-safe labels used for analysis are in `data/processed/human_validation_annotations.csv`; `src/evaluate_human_validation.py` reproduces the global metrics, per-category metrics, and confusion matrices.
 
-The validation interface and evaluator responses are maintained separately from this repository so that evaluators remain blind to the final machine/pipeline labels.
-
-Validation results will be reported once data collection and agreement analyses are complete.
+The evaluators agreed on 424 of 450 screenshots (94.22%; Cohen's kappa 0.9338). The raw workbook is not part of the public package because it contains unnecessary response timestamps. See `validation/README.md` for the authoritative-source and privacy boundary.
 
 ## Reproducibility and privacy
 
@@ -233,7 +247,9 @@ This repository is designed to separate reproducible analytical logic from restr
 - cleaned Python source code;
 - classification configuration;
 - documentation;
-- anonymized final segment-level dataset.
+- anonymized final segment-level dataset;
+- privacy-safe refinement evidence and expert episode decisions;
+- privacy-safe human-validation annotations and derived metrics.
 
 ### Not distributed
 
@@ -243,7 +259,7 @@ This repository is designed to separate reproducible analytical logic from restr
 - private intermediate datasets;
 - manual-review working files;
 - evaluator credentials;
-- human-validation responses;
+- raw human-validation workbooks and response timestamps;
 - local file-system paths.
 
 This separation allows the analytical procedure and final anonymized data structure to be inspected without exposing the original research recordings.

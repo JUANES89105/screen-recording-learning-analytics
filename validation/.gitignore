@@ -1,0 +1,6 @@
+# Restricted source workbook and local validation diagnostics.
+*.xlsx
+human_validation_complete_analysis.csv
+human_validation_disagreements.csv
+human_validation_ev01_ev02.csv
+juegos_vs_youtube_cases.csv
