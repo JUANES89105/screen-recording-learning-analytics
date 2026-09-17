@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it using the metadata below."
+title: "Screen Recording Learning Analytics"
+type: software
+authors:
+  - family-names: "Vargas Herrera"
+    given-names: "Juan Pablo"
+  - family-names: "Gaona"
+    given-names: "Jorge"
+  - family-names: "Palacios"
+    given-names: "Catalina"
+repository-code: "https://github.com/JUANES89105/screen-recording-learning-analytics"
+url: "https://github.com/JUANES89105/screen-recording-learning-analytics"
+license: MIT
+version: "1.0.0"
+date-released: 2026-09-17

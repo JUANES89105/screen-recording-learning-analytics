@@ -320,8 +320,8 @@ The public reproduction workflow was verified using Python 3.13.5 with the exact
 
 ## Citation
 
-Citation information for the associated article and archived dataset will be added when the corresponding publication and repository records are available.
+Citation metadata for this repository are provided in `CITATION.cff`. GitHub can use this file to generate a formatted citation. The citation metadata can be updated when the associated article or an archived repository release receives its final publication information or DOI.
 
-## Verified reproduction environment
+## Licensing
 
-The public reproduction workflow was verified using Python 3.13.5 with the exact Python package versions specified in `requirements.txt`. System-level tools available during verification were Tesseract OCR 5.5.1 and FFmpeg 8.0. In this clean environment, the test suite passed and the public reproduction workflow reproduced all 18,829 final segment labels, classification methods, and temporal/manual flags, together with the reported total duration and 1,482 transitions.
+Source code is released under the MIT License. Public privacy-safe datasets and documentation are released under the Creative Commons Attribution 4.0 International License (CC BY 4.0). Original screen recordings, screenshots, raw OCR text, and other restricted research materials are not publicly distributed and are not covered by the public data license. See `LICENSE` and `LICENSES.md` for details.
