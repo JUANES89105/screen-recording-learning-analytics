@@ -314,6 +314,14 @@ pytest
 
 Pytest configuration is defined in `pyproject.toml`.
 
+## Verified reproduction environment
+
+The public reproduction workflow was verified using Python 3.13.5 with the exact Python package versions specified in `requirements.txt`. System-level tools available during verification were Tesseract OCR 5.5.1 and FFmpeg 8.0. In this clean environment, the test suite passed and the public reproduction workflow reproduced all 18,829 final segment labels, classification methods, and temporal/manual flags, together with the reported total duration and 1,482 transitions.
+
 ## Citation
 
 Citation information for the associated article and archived dataset will be added when the corresponding publication and repository records are available.
+
+## Verified reproduction environment
+
+The public reproduction workflow was verified using Python 3.13.5 with the exact Python package versions specified in `requirements.txt`. System-level tools available during verification were Tesseract OCR 5.5.1 and FFmpeg 8.0. In this clean environment, the test suite passed and the public reproduction workflow reproduced all 18,829 final segment labels, classification methods, and temporal/manual flags, together with the reported total duration and 1,482 transitions.
