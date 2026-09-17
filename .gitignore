@@ -3,3 +3,8 @@
 __pycache__/
 *.py[cod]
 .DS_Store
+
+# JLA submission files - local only
+JLA_manuscript_English.tex
+sample.bib
+revision_videos_ed_mat.bib
