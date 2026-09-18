@@ -3,7 +3,7 @@
 # Researchers should edit this YAML rather than modifying
 # the Python classification code.
 
-text_column: texto_extraido
+text_column: texto
 residual_category: Otro sitio
 
 scoring:
