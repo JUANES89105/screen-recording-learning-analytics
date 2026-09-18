@@ -1,0 +1,56 @@
+from_category,to_category,count
+Quinan,Screen Recorder,154
+Screen Recorder,Quinan,147
+Quinan,Google,79
+Quinan,GeoGebra,75
+GeoGebra,Quinan,73
+Juegos,Quinan,72
+Quinan,Juegos,68
+Quinan,Google (Mat),65
+Google (Mat),Quinan,65
+Quinan,Otro sitio,63
+Google,Quinan,60
+Quinan,Wikipedia,53
+Wikipedia,Quinan,51
+Otro sitio,Quinan,46
+Google,Google (Mat),42
+Google (Mat),Google,33
+Otro sitio,Google,24
+Google,YouTube,22
+Google,Otro sitio,20
+Google (Mat),GeoGebra,19
+YouTube,Google,19
+GeoGebra,Google (Mat),18
+YouTube,Quinan,18
+Google,Screen Recorder,16
+Quinan,YouTube,15
+Screen Recorder,Google,13
+Otro sitio,Screen Recorder,13
+Google,Juegos,12
+Wikipedia,Google (Mat),12
+Otro sitio,Google (Mat),12
+Google (Mat),Wikipedia,12
+Google (Mat),Screen Recorder,10
+GeoGebra,Otro sitio,10
+Google (Mat),Otro sitio,9
+Otro sitio,GeoGebra,7
+Juegos,Screen Recorder,6
+Juegos,Google,5
+Wikipedia,Google,4
+Screen Recorder,Otro sitio,4
+Otro sitio,Juegos,4
+Google (Mat),Juegos,3
+GeoGebra,Screen Recorder,3
+Google,Wikipedia,3
+Juegos,Otro sitio,3
+Google (Mat),YouTube,3
+Screen Recorder,GeoGebra,3
+Screen Recorder,Google (Mat),3
+Screen Recorder,Juegos,2
+YouTube,Google (Mat),2
+YouTube,Screen Recorder,2
+Screen Recorder,Wikipedia,1
+Screen Recorder,YouTube,1
+Juegos,GeoGebra,1
+Wikipedia,Otro sitio,1
+Wikipedia,Screen Recorder,1
