@@ -229,6 +229,8 @@ The five-category output in `data/processed/initial_classification_summary.csv` 
 
 Raw OCR text and screenshots cannot be distributed. For exact public downstream reproduction, `data/processed/refinement_input_public.csv` retains the anonymized segment times, historical `palabra_base`, OCR mode, and category-level Boolean evidence derived from the restricted OCR. It contains no OCR text, screenshot path, participant identity, or local path. Expert episode decisions are provided separately in `data/processed/manual_review_decisions_public.csv` without review notes or private paths.
 
+Segment durations correspond to the values recorded during the original segmentation procedure. Because segment timestamps and durations were independently rounded to two decimal places, recomputing duration as `end_time_s - start_time_s` may differ from the stored `duration_s` by 0.01 s in a small number of records. These rounding differences do not affect the reported duration-based results.
+
 Run the complete privacy-safe downstream reproduction and verify it against the authoritative final dataset:
 
 ```bash
