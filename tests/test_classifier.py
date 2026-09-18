@@ -8,7 +8,7 @@ def test_basic_classification():
     config = Path("config/sites_example.yaml")
     classifier = RuleBasedClassifier(config)
     df = pd.DataFrame({
-        "texto_extraido": [
+        "texto": [
             "Welcome to Moodle - My courses",
             "GeoGebra Classic",
             "OpenAI ChatGPT",
