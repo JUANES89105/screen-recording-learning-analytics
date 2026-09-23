@@ -85,3 +85,15 @@ IMG_0001
 IMG_0002
 ...
 IMG_0450
+
+```
+
+The evaluators independently classified each screenshot using one of the nine final category labels listed above. Classification was based on the visual content presented in the screenshot. No additional operational rules or precedence criteria were provided for cases in which more than one category could plausibly apply.
+
+The evaluators were blinded to the final category assigned by the pipeline and to the other evaluator's decisions. The annotations were therefore produced independently of the computational labels and without a prior consensus process.
+
+## Public validation data
+
+The anonymized annotations are available in `data/processed/human_validation_annotations.csv`. The public validation files contain the information required to reproduce the agreement and classification metrics reported in the manuscript without exposing the original screenshots.
+
+The validation metrics can be reproduced using the public analysis scripts and the realized sample manifest. The original screenshots remain restricted because they may contain identifiable information.
