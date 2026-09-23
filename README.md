@@ -203,6 +203,8 @@ Classification rules are separated from the executable code and stored in:
 config/sites.yaml
 ```
 
+`config/sites.yaml` preserves the study-specific historical configuration and expects the reprocessed OCR field `texto_ocr_nuevo`. For a new workflow starting from the public extraction interface, `config/sites_example.yaml` provides a compatible example configuration using the `texto` field produced by `src/extraction.py`. Researchers adapting the pipeline to new data should use the example configuration as a template rather than assuming that the historical study configuration is directly compatible with newly extracted data.
+
 This separation makes the classification logic auditable and allows the rule set to be inspected independently of the Python implementation.
 
 Both the base classifier and the reproducible refinement engine are configuration-driven. Study-specific category names, textual evidence, derived-category definitions, historical mappings, and residual-refinement rules are declared in YAML rather than hard-coded in the Python modules. Researchers adapting the pipeline to another context can therefore modify the configuration without editing the classification or refinement source code.
